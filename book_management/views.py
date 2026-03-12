@@ -6,3 +6,7 @@ def index(request):
     return render(request, "book_management/index.html", {
         "books": Book.objects.all(),
     })
+
+def book_create(request):
+
+    return render(request, "book_management/book_create.html")

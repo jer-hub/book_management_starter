@@ -11,6 +11,12 @@
     <h3>List of Books</h3>
 
     <div>
+        <a href="{% url 'book_management:book_create' %}">
+            <button>create</button>
+        </a>
+    </div>
+
+    <div>
         <ul>
             {% for book in books %}
                 <li>
@@ -21,7 +27,6 @@
             {% endfor %}
         </ul>
     </div>
-
 </body>
 
 </html>
